@@ -1,28 +1,44 @@
-#import numpy as np
-#data = np.asarray([ [1,2,3], [4,5,6], [7,8,9] ])
+def removeDuplicates(raw_list):
+    no_duplicate_list = []
+    loss = 0
+    win = 0
+    draw = 0
+    for q in range(len(raw_list)):
+        unique = 1
+        for w in range(len(raw_list)):
+            if(q != w and raw_list[q] == raw_list[w]):
+                unique = 0
+        if(unique == 1):
+            no_duplicate_list.append(raw_list[q])
+            if(raw_list[q][-1] == 0):
+                loss += 1
+            elif (raw_list[q][-1] == 1):
+                win += 1
+            elif (raw_list[q][-1] == 2):
+                draw += 1
+            else:
+                print("ERROR 15, No result to record")
+                exit(15)
+        else:
+            if(not no_duplicate_list.__contains__(raw_list[q])):
+                no_duplicate_list.append(raw_list[q])
+                if (raw_list[q][-1] == 0):
+                    loss += 1
+                elif (raw_list[q][-1] == 1):
+                    win += 1
+                elif (raw_list[q][-1] == 2):
+                    draw += 1
+                else:
+                    print("ERROR 15, No result to record")
+                    exit(15)
+    return no_duplicate_list, loss, win, draw
 
-#np.savetxt('test.csv', data, fmt="%d", delimiter=',')
 
-i = 2
+this_list = [[1,2,3,1],[2,3,4,1],[2,5,7,2],[1,2,3,1],[2,3,4,1],[2,3,4,1],[2,3,4,1]]
 
-somelist = "'26-23 22. 19x26 31x22x15 23. 25-22 14-10 24. 22-18 10x1 25. 18x11 1-6 26. 11-15', '28-24 1/2-1/2'"
+no_dupes, losses, wins, draws = removeDuplicates(this_list)
 
-
-checkvar = ""
-
-for z in range(8):
-    checkvar = checkvar + somelist[len(somelist)-9+z]
-
-
-if checkvar.__contains__("0,1"):
-    somelist = somelist[:-3]
-elif checkvar.__contains__("1,0"):
-    somelist = somelist[:-3]
-elif checkvar.__contains__("1/2-1/2"):
-    somelist = somelist[:-8]
-else:
-    print("ERROR, no extra result to remove at i number: ", i)
-
-print(checkvar)
-print(somelist)
-
+print(no_dupes)
+print(losses)
+print(wins)
+print(draws)

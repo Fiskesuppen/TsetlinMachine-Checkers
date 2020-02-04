@@ -531,6 +531,18 @@ def removeDuplicates(raw_list):
             else:
                 print("ERROR 15, No result to record")
                 exit(15)
+        else:
+            if(not no_duplicate_list.__contains__(raw_list[q])):
+                no_duplicate_list.append(raw_list[q])
+                if (raw_list[q][-1] == 0):
+                    loss += 1
+                elif (raw_list[q][-1] == 1):
+                    win += 1
+                elif (raw_list[q][-1] == 2):
+                    draw += 1
+                else:
+                    print("ERROR 15, No result to record")
+                    exit(15)
     return no_duplicate_list, loss, win, draw
 
 
