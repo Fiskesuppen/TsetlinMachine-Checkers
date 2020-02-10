@@ -1,6 +1,7 @@
 from pyTsetlinMachineParallel.tm import MultiClassTsetlinMachine
 import numpy as np
 from time import time
+import math
 
 X_train = np.array([])
 Y_train = np.array([])
@@ -11,6 +12,11 @@ base_path_start = "Data/KfoldDataStaticTransformed/"
 base_path_end = "statickfold.data"
 # path_train = "Data/eventrain.data"
 # path_test = "Data/eventest.data"
+
+
+def round_up(n, decimals=0):
+    multiplier = 10 ** decimals
+    return math.ceil(n * multiplier) / multiplier
 
 
 def tsetlinStandard(epochs, clauses, T, s, k_fold_amount):
@@ -44,6 +50,7 @@ def mergingKFold(file_amount, _clauses, _T, _s, _epochs):
         train_string = base_path_start + str(i) + "train" + base_path_end
         test_string = base_path_start + str(i) + "test" + base_path_end
         score = loadingData(train_string, test_string, _clauses, _T, _s, _epochs)
+        score = round_up(score, 2)
         results.append(score)
 
     return results
@@ -106,3 +113,10 @@ k_fold_amount = 10
 #tsetlinStandardHandler(k_fold_amount, clauses, T, s, epochs)
 
 tsetlinStandardHandler(k_fold_amount, 12000, 80, 27, 500)
+tsetlinStandardHandler(k_fold_amount, 12000, 20, 27, 500)
+tsetlinStandardHandler(k_fold_amount, 12000, 50, 27, 500)
+tsetlinStandardHandler(k_fold_amount, 12000, 200, 27, 500)
+tsetlinStandardHandler(k_fold_amount, 12000, 400, 27, 500)
+tsetlinStandardHandler(k_fold_amount, 12000, 800, 27, 500)
+
+

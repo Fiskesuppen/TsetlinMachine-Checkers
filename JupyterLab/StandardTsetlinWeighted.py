@@ -1,6 +1,7 @@
 from pyTsetlinMachineParallel.tm import MultiClassTsetlinMachine
 import numpy as np
 from time import time
+import math
 
 X_train = np.array([])
 Y_train = np.array([])
@@ -11,6 +12,11 @@ base_path_start = "Data/KfoldDataStaticTransformed/"
 base_path_end = "statickfold.data"
 # path_train = "Data/eventrain.data"
 # path_test = "Data/eventest.data"
+
+
+def round_up(n, decimals=0):
+    multiplier = 10 ** decimals
+    return math.ceil(n * multiplier) / multiplier
 
 
 def tsetlinStandardWeighted(epochs, clauses, T, s, k_fold_amount):
@@ -44,6 +50,7 @@ def mergingKFold(file_amount, _clauses, _T, _s, _epochs):
         train_string = base_path_start + str(i) + "train" + base_path_end
         test_string = base_path_start + str(i) + "test" + base_path_end
         score = loadingData(train_string, test_string, _clauses, _T, _s, _epochs)
+        score = round_up(score, 2)
         results.append(score)
 
     return results
@@ -105,5 +112,9 @@ def TM(_clauses, _T, _s, _epochs):
 k_fold_amount = 10
 #tsetlinStandardWeightedHandler(k_fold_amount, clauses, T, s, epochs)
 
-tsetlinStandardWeightedHandler(k_fold_amount, 500, 1600, 27, 500)
-tsetlinStandardWeightedHandler(k_fold_amount, 500, 3000, 27, 500)
+tsetlinStandardWeightedHandler(k_fold_amount, 2000, 12000, 15, 500)
+tsetlinStandardWeightedHandler(k_fold_amount, 3000, 12000, 15, 500)
+tsetlinStandardWeightedHandler(k_fold_amount, 5000, 12000, 15, 500)
+tsetlinStandardWeightedHandler(k_fold_amount, 8000, 12000, 15, 500)
+tsetlinStandardWeightedHandler(k_fold_amount, 12000, 12000, 15, 500)
+tsetlinStandardWeightedHandler(k_fold_amount, 15000, 12000, 15, 500)
