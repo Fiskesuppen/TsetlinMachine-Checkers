@@ -1,0 +1,1 @@
+Same data as the previous data, but this one also has added reversed boards: win/loss is switched as well as the color of all pieces.

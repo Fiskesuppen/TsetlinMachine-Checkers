@@ -1,0 +1,7 @@
+Data:
+	Mer data:
+		Bytte rundt på farger.
+		Ta med tidligere trekk også.
+	Bedre data:
+		Slenge på metadata, altså informasjon om data.
+			Ekstra bits som sier hvor mange "poeng" hver spiller har, eller hvor mange av hver type brikke hver spiller har. Mulig Tsetlin synes det er lettere å se en sammenheng slik.

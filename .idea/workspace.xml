@@ -2,11 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e27f3aa-7d6f-4e71-8150-ded64e9580fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/boardmakerWithColorReverse.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/TsetlinMachine-Checkers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TsetlinMachine-Checkers.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupyterLab/StandardTsetlin.py" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterLab/StandardTsetlin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/0teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/0trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/0trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/1teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/1trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/2teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/2trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/3teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/3trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/3trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/4teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/4trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/5teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/5trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/6teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/6trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/7teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/7trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/8teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/8trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9teststatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/9teststatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9trainstatickfold.data" beforeDir="false" afterPath="$PROJECT_DIR$/9trainstatickfold.data" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binaryboards.csv" beforeDir="false" afterPath="$PROJECT_DIR$/binaryboards.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,38 +35,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/TsetlinMachine_Checkers$datanormalizeiwithstaticdrawsplit10.coverage" NAME="datanormalizeiwithstaticdrawsplit10 Coverage Results" MODIFIED="1580731650300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TsetlinMachine_Checkers$boardmaker.coverage" NAME="boardmaker Coverage Results" MODIFIED="1580727223022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TsetlinMachine_Checkers$datanormalizeiwithstaticdrawsplit10.coverage" NAME="datanormalizeiwithstaticdrawsplit10 Coverage Results" MODIFIED="1581346406782" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TsetlinMachine_Checkers$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1580727210900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TsetlinMachine_Checkers$boardmakerWithColorReverse.coverage" NAME="boardmakerWithColorReverse Coverage Results" MODIFIED="1581344037541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TsetlinMachine_Checkers$boardmaker.coverage" NAME="boardmaker Coverage Results" MODIFIED="1580727223022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1933459347">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.120" value="1" />
           <entry key="project.open.time.147" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="248" />
+          <entry key="py" value="522" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="248" />
+          <entry key="Python" value="522" />
         </counts>
       </usages-collector>
     </session>
@@ -75,17 +97,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/boardmaker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="127">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/boardmakerWithColorReverse.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="79">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JupyterLab/StandardTsetlin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1914">
-              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+            <state relative-caret-position="254">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -96,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+            <state relative-caret-position="1989">
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -105,11 +136,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/datanormalizeiwithstaticdrawsplit10.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3111">
-              <caret line="184" selection-start-line="184" selection-end-line="184" />
+            <state relative-caret-position="51">
+              <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -151,6 +182,8 @@
         <option value="$PROJECT_DIR$/test1.py" />
         <option value="$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py" />
         <option value="$PROJECT_DIR$/JupyterLab/StandardTsetlin.py" />
+        <option value="$PROJECT_DIR$/boardmakerWithColorReverse.py" />
+        <option value="$PROJECT_DIR$/datanormalizeiwithstaticdrawsplit10.py" />
       </list>
     </option>
   </component>
@@ -171,6 +204,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Course" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -188,7 +222,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,6 +258,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boardmaker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="boardmakerWithColorReverse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TsetlinMachine-Checkers" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boardmakerWithColorReverse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -281,10 +336,12 @@
       <item itemvalue="Python.test1" />
       <item itemvalue="Python.boardmaker" />
       <item itemvalue="Python.datanormalizeiwithstaticdrawsplit10" />
+      <item itemvalue="Python.boardmakerWithColorReverse" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.datanormalizeiwithstaticdrawsplit10" />
+        <item itemvalue="Python.boardmakerWithColorReverse" />
         <item itemvalue="Python.boardmaker" />
         <item itemvalue="Python.test1" />
       </list>
@@ -304,14 +361,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2217806" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22541603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,7 +378,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -337,12 +394,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/datanormalizeiwithstaticdrawsplit10.py">
+    <entry file="file://$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3111">
-          <caret line="184" selection-start-line="184" selection-end-line="184" />
+        <state relative-caret-position="1989">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -354,10 +411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py">
+    <entry file="file://$PROJECT_DIR$/JupyterLab/StandardTsetlin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+        <state relative-caret-position="254">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
@@ -366,17 +423,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boardmaker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="127">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/JupyterLab/StandardTsetlin.py">
+    <entry file="file://$PROJECT_DIR$/boardmakerWithColorReverse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1914">
-          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="79">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datanormalizeiwithstaticdrawsplit10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
