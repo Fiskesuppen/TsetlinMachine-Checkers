@@ -1,9 +1,8 @@
 
 
 
-somestring = "123456789"
+onelist = [1,2,3,4,5,6,7,8,9]
 
+print(len(onelist))
 
-for i in range(len(somestring)):
-    if(i < len(somestring)):
-        print(somestring[i])
+print(onelist[0:(len(onelist)-1)])

@@ -1,0 +1,2 @@
+No color flip.
+Contains final, second final and third final boards. Boards generated from a set of moves in training is not used for testing for each KFold (clean testing). Any duplicates found in a train or test are removed from test (clean testing).
