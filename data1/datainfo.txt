@@ -1,4 +1,9 @@
+BoardMaker.py -> datanormalizewithstaticdrawsplit10.py
 Data built straight-forward. Cleaned, no alterations, final board only.
+
+
+
+
 
 KFold  0  Train test ratios:  Size ratio:  11.121921245327462  Loss ratio:  11.12925804946337  Win ratio:  11.135168574079803  Draw ratio:  11.115736885928392
 KFold  0  Train: Amount of data:  19529  Loss percent:  21.9468482769215  Win percent:  16.554867120692304  Draw percent:  61.4982846023862

@@ -2,21 +2,21 @@ import csv
 import math
 import numpy as np
 
-#my_data = np.genfromtxt('OCA_2.0.csv', delimiter=',')
+# my_data = np.genfromtxt('OCA_2.0.csv', delimiter=',')
 """Create the starting board and define what data represents what type of piece"""
 print("Extracting moves")
-#print(my_data)
-#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
-#[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-#0 = empty
-#1 = black checker
-#2 = black king
-#3 = white checker
-#4 = white king
-#starting_board = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+# print(my_data)
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+# [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# 0 = empty
+# 1 = black checker
+# 2 = black king
+# 3 = white checker
+# 4 = white king
+# starting_board = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
 
-#print(len(starting_board))
-#print(starting_board)
+# print(len(starting_board))
+# print(starting_board)
 
 
 """Clean the source data"""
@@ -38,6 +38,8 @@ Outputs a list of two items.
 0: list of all moves, one move per index.
 1: match result.
 """
+
+
 def playBuilderEngine(local_playstring):
     somelist = []
     capturetimeout = 0
@@ -91,6 +93,7 @@ def playBuilderEngine(local_playstring):
             capturetimeout = 0
     return somelist
 
+
 def playBuilder(local_playlist, local_result):
     product_list = []
     listed_moves = []
@@ -103,10 +106,9 @@ def playBuilder(local_playlist, local_result):
     return product_list
 
 
-
-#lines = open("minidata.csv").read().splitlines()
+# lines = open("minidata.csv").read().splitlines()
 lines = open("OCA_2.0.csv").read().splitlines()
-#print(f.readlines())
+# print(f.readlines())
 datapoints = 0
 fetch_moves = 0
 extracted_data = []
@@ -114,18 +116,18 @@ this_result = 0
 this_play = []
 
 loaded_datapoints = 0
-bad_data= 0
+bad_data = 0
 
 for i in range(len(lines)):
-    #print(lines[i])
-    if(lines[i].__contains__("Result")):
-        if(lines[i].__contains__("0-1")):
+    # print(lines[i])
+    if (lines[i].__contains__("Result")):
+        if (lines[i].__contains__("0-1")):
             this_result = 0
             losses += 1
-        elif(lines[i].__contains__("1-0")):
+        elif (lines[i].__contains__("1-0")):
             this_result = 1
             wins += 1
-        elif(lines[i].__contains__("1/2-1/2")):
+        elif (lines[i].__contains__("1/2-1/2")):
             this_result = 2
             draws += 1
         else:
@@ -133,16 +135,16 @@ for i in range(len(lines)):
             exit(2)
         fetch_moves = 1
         datapoints += 1
-        #print("Result found: ", this_result)
-    elif(fetch_moves != 0):
-        #if(not(lines[i][0] == )):
-        #print("Fetching moves")
-        if(len(lines[i]) > 0):
-            if(lines[i][0].isdigit()):
-                #print("Adding move")
+        # print("Result found: ", this_result)
+    elif (fetch_moves != 0):
+        # if(not(lines[i][0] == )):
+        # print("Fetching moves")
+        if (len(lines[i]) > 0):
+            if (lines[i][0].isdigit()):
+                # print("Adding move")
                 this_play.append(lines[i])
         else:
-            #print("Finalizing play")
+            # print("Finalizing play")
             if this_play[-1].__contains__("0-1"):
                 this_play[-1] = this_play[-1][:- 4]
             elif this_play[-1].__contains__("1-0"):
@@ -154,10 +156,9 @@ for i in range(len(lines)):
                 print(this_play[-1])
                 print("Data point ignored")
                 bad_data = 1
-                #exit(3)
+                # exit(3)
 
-
-            if(bad_data == 1):
+            if (bad_data == 1):
                 bad_boards += 1
                 this_play = []
                 fetch_moves = 0
@@ -173,19 +174,18 @@ this_play.append(this_result)
 extracted_data.append(this_play)
 loaded_datapoints += 1
 
+# print("Extracted data: ")
+# for i in range(len(extracted_data)):
+# print(extracted_data[i])
 
-#print("Extracted data: ")
-#for i in range(len(extracted_data)):
-    #print(extracted_data[i])
+# print("Datapoints: ", datapoints)
+# print("Loaded datapoints: ", loaded_datapoints)
 
-#print("Datapoints: ", datapoints)
-#print("Loaded datapoints: ", loaded_datapoints)
-
-#One full datapoint
+# One full datapoint
 print(extracted_data[0])
-#One datapoint's list of moves
+# One datapoint's list of moves
 print(extracted_data[0][0])
-#One datapoint's result
+# One datapoint's result
 print(extracted_data[0][1])
 
 print("Wins: ", wins)
@@ -203,10 +203,7 @@ for row in extracted_data:
     writer.writerow(row)
 """
 
-
-
-
-#Makes KFold
+# Makes KFold
 
 print(extracted_data[0][0])
 print(extracted_data[0][1])
@@ -222,13 +219,13 @@ def removeDuplicates(raw_list):
 
     for q in range(len(raw_list)):
         unique = 1
-        if(len(raw_list[q]) == 2):
+        if (len(raw_list[q]) == 2):
             for w in range(len(raw_list)):
-                if(q != w and raw_list[q] == raw_list[w]):
+                if (q != w and raw_list[q] == raw_list[w]):
                     unique = 0
-            if(unique == 1):
+            if (unique == 1):
                 no_duplicate_list.append(raw_list[q])
-                if(raw_list[q][1] == 0):
+                if (raw_list[q][1] == 0):
                     loss += 1
                 elif (raw_list[q][1] == 1):
                     win += 1
@@ -238,7 +235,7 @@ def removeDuplicates(raw_list):
                     print("ERROR 15, No result to record")
                     exit(15)
             else:
-                if(not no_duplicate_list.__contains__(raw_list[q])):
+                if (not no_duplicate_list.__contains__(raw_list[q])):
                     no_duplicate_list.append(raw_list[q])
                     if (raw_list[q][-1] == 0):
                         loss += 1
@@ -261,7 +258,6 @@ extracted_data = removeDuplicates(extracted_data)
 
 print(extracted_data[0])
 
-
 """
 
 Extracte moves, ok
@@ -276,35 +272,39 @@ Duplikat-sjekk: Så lenge det kun finnes én versjon i hver kfold, altså at det
 Løsning: det er ikke et problem. eneste problemet her er at duplikat-sjekken må kjøres for hvert sett av train og test. Dette tar en del tid å kjøre gjennom. I tillegg så kan splitten bli litt rar, ikke helt 90%
 
 """
+
+
 def round_down(n, decimals=0):
     multiplier = 10 ** decimals
     return math.floor(n * multiplier) / multiplier
 
 
 """Build the boards, while checking for illegal moves as a way to counteract possible typing errors"""
-#There are multiple ways to create data of this.
-    #Must do
-        #Create final board with the result
-    #Maybe do
-        #Create multiple boards with some result. Possibly average out equal boards in case equal boards may lead to
-        #different results or simply allow "duplicates" with different results.
-        #The power of Tsetlin machine may find out that three equal boards with
-        #different outcomes states that the outcome is uncertain?
-    #Granmo tips regarding data making:
-        #You can create more data by using previous moves, BUT: make sure to keep the bonus data
-        #in the same data category (training/test) in order to not contaminate the test data.
 
-#In theory:
-#[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
-#In programming:
-#[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
-#[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-#0 = empty
-#1 = black checker
-#2 = black king
-#3 = white checker
-#4 = white king
-#starting_board = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+
+# There are multiple ways to create data of this.
+# Must do
+# Create final board with the result
+# Maybe do
+# Create multiple boards with some result. Possibly average out equal boards in case equal boards may lead to
+# different results or simply allow "duplicates" with different results.
+# The power of Tsetlin machine may find out that three equal boards with
+# different outcomes states that the outcome is uncertain?
+# Granmo tips regarding data making:
+# You can create more data by using previous moves, BUT: make sure to keep the bonus data
+# in the same data category (training/test) in order to not contaminate the test data.
+
+# In theory:
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
+# In programming:
+# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+# [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+# 0 = empty
+# 1 = black checker
+# 2 = black king
+# 3 = white checker
+# 4 = white king
+# starting_board = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
 
 
 #    1   2   3   4
@@ -318,31 +318,33 @@ def round_down(n, decimals=0):
 
 def getDiagonalTable():
     diagonals = [[5, 6], [6, 7], [7, 8], [8], [1, 9], [1, 2, 9, 10], [2, 3, 10, 11],
-                       [3, 4, 11, 12], [5, 6, 13, 14], [6, 7, 14, 15], [7, 8, 15, 16], [8, 16],
-                       [9, 17], [9, 10, 17, 18], [10, 11, 18, 19], [11, 12, 19, 20],
-                       [13, 14, 21, 22], [14, 15, 22, 23], [15, 16, 23, 24], [16, 24],
-                       [17, 25], [17, 18, 25, 26], [18, 19, 26, 27], [19, 20, 27, 28],
-                       [21, 22, 29, 30], [22, 23, 30, 31], [23, 24, 31, 32], [24, 32],
-                       [25], [25, 26], [26, 27], [27, 28]]
+                 [3, 4, 11, 12], [5, 6, 13, 14], [6, 7, 14, 15], [7, 8, 15, 16], [8, 16],
+                 [9, 17], [9, 10, 17, 18], [10, 11, 18, 19], [11, 12, 19, 20],
+                 [13, 14, 21, 22], [14, 15, 22, 23], [15, 16, 23, 24], [16, 24],
+                 [17, 25], [17, 18, 25, 26], [18, 19, 26, 27], [19, 20, 27, 28],
+                 [21, 22, 29, 30], [22, 23, 30, 31], [23, 24, 31, 32], [24, 32],
+                 [25], [25, 26], [26, 27], [27, 28]]
     return diagonals
+
 
 def isDiagonal(position1, position2):
     local_diagonals = getDiagonalTable()
-    if(position2 in local_diagonals[position1 -1] and position1 != 0 and position2 != 0):
+    if (position2 in local_diagonals[position1 - 1] and position1 != 0 and position2 != 0):
         return True
     else:
         return False
 
+
 def isMovingRightWay(checker_to_move, moveto, piece_type, board):
-    if(piece_type not in [1,2,3,4]):
+    if (piece_type not in [1, 2, 3, 4]):
         print("Error 10, trying to move a non-existing piece, piece is: ", piece_type, " location: ", checker_to_move)
         return False
-    if(piece_type == 1):
-        if(checker_to_move > moveto):
+    if (piece_type == 1):
+        if (checker_to_move > moveto):
             print("Wrong way")
             return False
-    elif(piece_type == 3):
-        if(checker_to_move < moveto):
+    elif (piece_type == 3):
+        if (checker_to_move < moveto):
             print("Wrong way")
             return False
     return True
@@ -350,31 +352,35 @@ def isMovingRightWay(checker_to_move, moveto, piece_type, board):
 
 def movePiece(board, action, checker_to_move):
     moveto = str(action[action.index("-") + 1])
-    if(action.index("-") + 2 < len(action)):
+    if (action.index("-") + 2 < len(action)):
         moveto = moveto + str(action[action.index("-") + 2])
     moveto = int(moveto)
-    if(board[moveto-1] == 0):
-        if(isDiagonal(checker_to_move, moveto) and isMovingRightWay(checker_to_move, moveto, board[checker_to_move-1], board)):
-            board[moveto-1]= board[checker_to_move-1]
-            board[checker_to_move-1] = 0
+    if (board[moveto - 1] == 0):
+        if (isDiagonal(checker_to_move, moveto) and isMovingRightWay(checker_to_move, moveto,
+                                                                     board[checker_to_move - 1], board)):
+            board[moveto - 1] = board[checker_to_move - 1]
+            board[checker_to_move - 1] = 0
             upper_border = [1, 2, 3, 4]
             lower_border = [29, 30, 31, 32]
-            if(upper_border.__contains__(moveto) and board[moveto-1] == 3):
-                board[moveto -1] = 4
-            elif(lower_border.__contains__(moveto) and board[moveto-1] == 1):
-                board[moveto -1] = 2
+            if (upper_border.__contains__(moveto) and board[moveto - 1] == 3):
+                board[moveto - 1] = 4
+            elif (lower_border.__contains__(moveto) and board[moveto - 1] == 1):
+                board[moveto - 1] = 2
             return board, 1
         else:
-            print("Error 9, trying to move piece to non-diagonal spot or wrong way, checker_to_move: ", checker_to_move, " moveto: ", moveto, " board[checker_to_move-1]: ", board[checker_to_move-1])
+            print("Error 9, trying to move piece to non-diagonal spot or wrong way, checker_to_move: ", checker_to_move,
+                  " moveto: ", moveto, " board[checker_to_move-1]: ", board[checker_to_move - 1])
             return board, 0
     else:
         print("Error 8, trying to move piece to an occupied spot")
         return board, 0
 
+
 def isCaptureDiagonal(position1, position2):
     position1 += 1
     position2 += 1
-    if((position1-position2) == 9 or (position2-position1) == 9 or (position1-position2) == 7 or (position2-position1) == 7):
+    if ((position1 - position2) == 9 or (position2 - position1) == 9 or (position1 - position2) == 7 or (
+            position2 - position1) == 7):
         return True
     else:
         return False
@@ -382,26 +388,29 @@ def isCaptureDiagonal(position1, position2):
 
 """This function actually performs the capture action
     Returns board"""
+
+
 def doCapture(board, position1, position2):
-    #Checks if captures opposite color
+    # Checks if captures opposite color
     diagonals = getDiagonalTable()
-    if((len(list(set(diagonals[position1 -1]).intersection(diagonals[position2 -1])))) == 1):
-        to_capture = list(set(diagonals[position1 -1]).intersection(diagonals[position2 -1]))[0]
+    if ((len(list(set(diagonals[position1 - 1]).intersection(diagonals[position2 - 1])))) == 1):
+        to_capture = list(set(diagonals[position1 - 1]).intersection(diagonals[position2 - 1]))[0]
     else:
         print("Error 12, found none or multiple pieces to capture when comparing diagonals")
         return board, 0
-    black_pieces = [1,2]
-    white_pieces = [3,4]
-    if(board[to_capture -1] == 0):
+    black_pieces = [1, 2]
+    white_pieces = [3, 4]
+    if (board[to_capture - 1] == 0):
         print("Error 14, trying to capture blank position")
         return board, 0
-    elif((board[position1-1] in black_pieces and board[to_capture -1] in black_pieces) or (board[position1-1] in white_pieces and board[to_capture -1] in white_pieces)):
+    elif ((board[position1 - 1] in black_pieces and board[to_capture - 1] in black_pieces) or (
+            board[position1 - 1] in white_pieces and board[to_capture - 1] in white_pieces)):
         print("Error 13, trying to capture piece of same color")
         return board, 0
     else:
-        board[position2 -1] = board[position1 -1]
-        board[position1 -1] = 0
-        board[to_capture -1] = 0
+        board[position2 - 1] = board[position1 - 1]
+        board[position1 - 1] = 0
+        board[to_capture - 1] = 0
         upper_border = [1, 2, 3, 4]
         lower_border = [29, 30, 31, 32]
         if (upper_border.__contains__(position2) and board[position2 - 1] == 3):
@@ -414,100 +423,106 @@ def doCapture(board, position1, position2):
 """This function is responsible for checking for the legality of a single capture
     as well as actually performing the changes to the board.
     Returns boolean"""
+
+
 def isLegalCapture(board, position1, position2):
-    #Make sure that the jump is ok:
-        #Does jump over enemy piece
-        #Is diagonal, with extra step
-    if(isMovingRightWay(position1, position2, board[position1-1], board) and isCaptureDiagonal(position1,position2)):
+    # Make sure that the jump is ok:
+    # Does jump over enemy piece
+    # Is diagonal, with extra step
+    if (isMovingRightWay(position1, position2, board[position1 - 1], board) and isCaptureDiagonal(position1,
+                                                                                                  position2)):
         return True
     else:
         return False
 
 
-
-
 """This function is responsible for handling the captures of pieces.
     It will dissect all capture actions into single capture actions
     to send to isLegalCapture"""
+
+
 def capturePiece(board, action, checker_to_move):
-    #Create a custom function, isLegalCapture.
+    # Create a custom function, isLegalCapture.
     position1 = checker_to_move
     first_position_switch = 0
     errorcheck = 1
     for i in range(len(action)):
-        if(action[i].__contains__("x")):
-            if((i+1) < len(action)):
-                if(action[i+1].isdigit()):
-                    if(first_position_switch == 1):
+        if (action[i].__contains__("x")):
+            if ((i + 1) < len(action)):
+                if (action[i + 1].isdigit()):
+                    if (first_position_switch == 1):
                         position1 = position2
-                    position2 = str(action[i+1])
-                    if((i+2) < len(action)):
-                        if(action[i + 2].isdigit()):
-                            position2 = position2 + str(action[i+2])
+                    position2 = str(action[i + 1])
+                    if ((i + 2) < len(action)):
+                        if (action[i + 2].isdigit()):
+                            position2 = position2 + str(action[i + 2])
                     position2 = int(position2)
-                    if(isLegalCapture(board, position1, position2)):
+                    if (isLegalCapture(board, position1, position2)):
                         board, errorcheck = doCapture(board, position1, position2)
-                        if(errorcheck == 0):
+                        if (errorcheck == 0):
                             return board, 0
                         first_position_switch = 1
                     else:
-                        print("Error 11, illegal capture attempted, wrong direction or not proper capture diagonal, action: ", action, " position1: ", position1, " position2: ", position2)
+                        print(
+                            "Error 11, illegal capture attempted, wrong direction or not proper capture diagonal, action: ",
+                            action, " position1: ", position1, " position2: ", position2)
                         return board, 0
     return board, 1
 
 
-
 """Handles the creation of a board. Performs turn-order checking
     and calls other functions for actions to be performed"""
+
+
 def createBoard(moves):
-    #Make sure correct color is moving.
-    #Call movePiece or capturePiece.
-    #Check if the piece ends at the end of the board, if so make it king.
+    # Make sure correct color is moving.
+    # Call movePiece or capturePiece.
+    # Check if the piece ends at the end of the board, if so make it king.
     # 0 = empty
     # 1 = black checker
     # 2 = black king
     # 3 = white checker
     # 4 = white king
-    #starting_board = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+    # starting_board = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
     board = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
-    #whose_turn: 0 = black, 1 = white
+    # whose_turn: 0 = black, 1 = white
     whose_turn = 0
     errorcheck = 1
 
-
-    if not(isinstance(moves, list)):
+    if not (isinstance(moves, list)):
         # Does not have to be three, just meant to be a plain check for whether the moves are a valid set of moves.
         # Some move-data is a single integer, which is not enough to describe a board/match
         return board, 0
 
     for move in moves:
         checker_to_move = str(move[0])
-        if(move[1].isdigit()):
+        if (move[1].isdigit()):
             checker_to_move = checker_to_move + str(move[1])
         checker_to_move = int(checker_to_move)
-        if(whose_turn == 0):
-            if(board[checker_to_move -1] == 1 or board[checker_to_move -1] == 2):
-                    #turn order ok
-                    if (move.__contains__("-")):
-                        board, errorecheck = movePiece(board, move, checker_to_move)
-                    elif(move.__contains__("x")):
-                        board, errorcheck = capturePiece(board, move, checker_to_move)
-                    else:
-                        print("Error 4, move does not contain - nor x")
-                        return board, 0
-                    if(errorcheck == 0):
-                        return board, 0
-                    whose_turn = 1
+        if (whose_turn == 0):
+            if (board[checker_to_move - 1] == 1 or board[checker_to_move - 1] == 2):
+                # turn order ok
+                if (move.__contains__("-")):
+                    board, errorecheck = movePiece(board, move, checker_to_move)
+                elif (move.__contains__("x")):
+                    board, errorcheck = capturePiece(board, move, checker_to_move)
+                else:
+                    print("Error 4, move does not contain - nor x")
+                    return board, 0
+                if (errorcheck == 0):
+                    return board, 0
+                whose_turn = 1
 
             else:
-                print("Error 5, wrong turn order, Black's turn now, not White. Or trying to move non-existing piece: ", board[checker_to_move -1], " on position: ", checker_to_move)
+                print("Error 5, wrong turn order, Black's turn now, not White. Or trying to move non-existing piece: ",
+                      board[checker_to_move - 1], " on position: ", checker_to_move)
                 print("Moves: ", moves)
                 print("Move: ", move)
                 print(board)
                 return board, 0
-        elif(whose_turn == 1):
+        elif (whose_turn == 1):
             if (board[checker_to_move - 1] == 3 or board[checker_to_move - 1] == 4):
-                #turn order ok
+                # turn order ok
                 if (move.__contains__("-")):
                     board, errorcheck = movePiece(board, move, checker_to_move)
                 elif (move.__contains__("x")):
@@ -515,11 +530,12 @@ def createBoard(moves):
                 else:
                     print("Error 4, move does not contain - nor x")
                     return board, 0
-                if(errorcheck == 0):
+                if (errorcheck == 0):
                     return board, 0
                 whose_turn = 0
             else:
-                print("Error 6, wrong turn order, White's turn now, not Black. Or trying to move non-existing piece: ", board[checker_to_move -1], " on position: ", checker_to_move)
+                print("Error 6, wrong turn order, White's turn now, not Black. Or trying to move non-existing piece: ",
+                      board[checker_to_move - 1], " on position: ", checker_to_move)
                 print("Moves: ", moves)
                 print("Move: ", move)
                 print(board)
@@ -532,22 +548,16 @@ def createBoard(moves):
     return board, 1
 
 
-
-
-
-
-
-
 def KFold_Maker(data, datasplits):
     losses = []
     wins = []
     draws = []
     for i in range(len(data)):
-        if(data[i][1] == 0):
+        if (data[i][1] == 0):
             losses.append(data[i])
-        elif(data[i][1] == 1):
+        elif (data[i][1] == 1):
             wins.append(data[i])
-        elif(data[i][1] == 2):
+        elif (data[i][1] == 2):
             draws.append(data[i])
         else:
             print("ERROR in KFold_Maker, result not 0, 1 or 2")
@@ -556,7 +566,7 @@ def KFold_Maker(data, datasplits):
     print("Amount of wins: ", len(wins))
     print("Amount of draws: ", len(draws))
 
-    #Datainfo stores information about the split of wins,losses and draws accross all datasets
+    # Datainfo stores information about the split of wins,losses and draws accross all datasets
     datainfo = []
     for y in range(datasplits):
         thisinfo = []
@@ -629,7 +639,7 @@ def KFold_Maker(data, datasplits):
             t = 0
             this_test = []
             for item in traintestdatas[a][r]:
-                #appending list[moves, result]
+                # appending list[moves, result]
                 this_test.append(item)
                 t += 1
             test_data.append(this_test)
@@ -640,8 +650,8 @@ def KFold_Maker(data, datasplits):
                     train_data.append(traintestdatas[q][t])
         np.random.shuffle(test_data)
         np.random.shuffle(train_data)
-        #So far so good, start from here....
-        #We now have this kfold in the form train: train_data and test: test_data
+        # So far so good, start from here....
+        # We now have this kfold in the form train: train_data and test: test_data
 
         this_kfold = []
         this_kfold.append(train_data)
@@ -651,9 +661,7 @@ def KFold_Maker(data, datasplits):
     return all_data
 
 
-
 kfolds = KFold_Maker(extracted_data, 10)
-
 
 # Create final board
 # Create second final board
@@ -662,30 +670,32 @@ kfolds = KFold_Maker(extracted_data, 10)
 
 
 """Transform into pure binary (one board per type of piece per player, 4 boards in total, as well as adding the result"""
+
+
 def toBinary(boards):
     print("Transforming boards to binary")
     binary_boards = []
     for i in range(len(boards)):
-        if(len(boards[i][0]) != 32):
+        if (len(boards[i][0]) != 32):
             print("Error in length of board, not equal to 32")
         this_binary_board = []
         for q in range(len(boards[i][0])):
-            if(boards[i][0][q] == 1):
+            if (boards[i][0][q] == 1):
                 this_binary_board.append(1)
             else:
                 this_binary_board.append(0)
         for q in range(len(boards[i][0])):
-            if(boards[i][0][q] == 2):
+            if (boards[i][0][q] == 2):
                 this_binary_board.append(1)
             else:
                 this_binary_board.append(0)
         for q in range(len(boards[i][0])):
-            if(boards[i][0][q] == 3):
+            if (boards[i][0][q] == 3):
                 this_binary_board.append(1)
             else:
                 this_binary_board.append(0)
         for q in range(len(boards[i][0])):
-            if(boards[i][0][q] == 4):
+            if (boards[i][0][q] == 4):
                 this_binary_board.append(1)
             else:
                 this_binary_board.append(0)
@@ -694,8 +704,9 @@ def toBinary(boards):
     return binary_boards
 
 
-#Compare internally within each list, and between both lists
+# Compare internally within each list, and between both lists
 def removeKFoldDuplicates(train, test):
+    print("Removing KFold Duplicates")
     no_duplicate_train = []
     no_duplicate_test = []
     trloss = 0
@@ -704,11 +715,11 @@ def removeKFoldDuplicates(train, test):
     for q in range(len(train)):
         unique = 1
         for w in range(len(train)):
-            if(q != w and train[q] == train[w]):
+            if (q != w and train[q] == train[w]):
                 unique = 0
-        if(unique == 1):
+        if (unique == 1):
             no_duplicate_train.append(train[q])
-            if(train[q][-1] == 0):
+            if (train[q][-1] == 0):
                 trloss += 1
             elif (train[q][-1] == 1):
                 trwin += 1
@@ -719,7 +730,7 @@ def removeKFoldDuplicates(train, test):
                 print(train[q][-1])
                 exit(15)
         else:
-            if(not no_duplicate_train.__contains__(train[q])):
+            if (not no_duplicate_train.__contains__(train[q])):
                 no_duplicate_train.append(train[q])
                 if (train[q][-1] == 0):
                     trloss += 1
@@ -736,11 +747,11 @@ def removeKFoldDuplicates(train, test):
     for q in range(len(test)):
         unique = 1
         for w in range(len(test)):
-            if(q != w and test[q] == [test[w]]):
+            if (q != w and test[q] == [test[w]]):
                 unique = 0
-        if(unique == 1):
+        if (unique == 1):
             no_duplicate_test.append(test[q])
-            if(test[q][-1] == 0):
+            if (test[q][-1] == 0):
                 teloss += 1
             elif (test[q][-1] == 1):
                 tewin += 1
@@ -750,7 +761,7 @@ def removeKFoldDuplicates(train, test):
                 print("ERROR 15, No result to record")
                 exit(15)
         else:
-            if(not no_duplicate_test.__contains__(test[q])):
+            if (not no_duplicate_test.__contains__(test[q])):
                 no_duplicate_test.append(test[q])
                 if (test[q][-1] == 0):
                     teloss += 1
@@ -769,11 +780,11 @@ def removeKFoldDuplicates(train, test):
     for q in range(len(no_duplicate_test)):
         unique = 1
         for w in range(len(no_duplicate_train)):
-            if(no_duplicate_test[q] == no_duplicate_train[w]):
+            if (no_duplicate_test[q] == no_duplicate_train[w]):
                 unique = 0
-        if(unique == 1):
+        if (unique == 1):
             cross_no_duplicate_test.append(no_duplicate_test[q])
-            if(test[q][-1] == 0):
+            if (test[q][-1] == 0):
                 teloss += 1
             elif (test[q][-1] == 1):
                 tewin += 1
@@ -791,9 +802,7 @@ def removeKFoldDuplicates(train, test):
     return no_duplicate_train, cross_no_duplicate_test
 
 
-
-
-
+"""
 print(len(kfolds))
 print(len(kfolds[0]))           #Is in a kfold
 print(len(kfolds[0][0]))        #Is in the train data
@@ -802,9 +811,7 @@ print(len(kfolds[0][0][0]))     #Is in a datapoint
 print(len(kfolds[0][0][1]))     #Is in another datapoint
 print(kfolds[0][0][0][0])       #Shows a datapoint's moves
 print(kfolds[0][0][0][1])       #Shows a datapoint's result
-
-
-
+"""
 
 """
 print("Creating boards")
@@ -822,24 +829,23 @@ for i in range(len(extracted_data)):
 
 """
 
-
-#Sende inn et par færre moves i boardmaker for å få med de nest siste brettene også i tillegg til full moves.
-#kjøre inn hvert sett i kfoldene i removeKFoldDuplicates
-#Lagre hver kfold sett i filer
+# Sende inn et par færre moves i boardmaker for å få med de nest siste brettene også i tillegg til full moves.
+# kjøre inn hvert sett i kfoldene i removeKFoldDuplicates
+# Lagre hver kfold sett i filer
 print("Creating boards")
 for i in range(len(kfolds)):
-    #Per kfold
+    # Per kfold
     this_train = []
     this_test = []
     for q in range(len(kfolds[i])):
-        #Per train or test
+        # Per train or test
         these_boards = []
         for e in range(len(kfolds[i][q])):
-            #Per board
-            #Final board
+            # Per board
+            # Final board
             this_board = []
             created_board, errorcheck = createBoard(kfolds[i][q][e][0])
-            if(errorcheck == 1):
+            if (errorcheck == 1):
                 this_board.append(created_board)
                 this_board.append(kfolds[i][q][e][1])
                 these_boards.append(this_board)
@@ -847,11 +853,11 @@ for i in range(len(kfolds)):
                 bad_boards += 1
                 print("Bad board, total bad boards: ", bad_boards)
 
-            #Removed 1 move
+            # Removed 1 move
             this_board = []
-            removed_one_move = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0])-1)]
+            removed_one_move = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0]) - 1)]
             created_board, errorcheck = createBoard(removed_one_move)
-            if(errorcheck == 1):
+            if (errorcheck == 1):
                 this_board.append(created_board)
                 this_board.append(kfolds[i][q][e][1])
                 these_boards.append(this_board)
@@ -859,34 +865,34 @@ for i in range(len(kfolds)):
                 bad_boards += 1
                 print("Bad board, total bad boards: ", bad_boards)
 
-            #Removed 2 moves
+            # Removed 2 moves
             this_board = []
-            removed_two_moves = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0])-2)]
+            removed_two_moves = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0]) - 2)]
             created_board, errorcheck = createBoard(removed_two_moves)
-            if(errorcheck == 1):
+            if (errorcheck == 1):
                 this_board.append(created_board)
                 this_board.append(kfolds[i][q][e][1])
                 these_boards.append(this_board)
             else:
                 bad_boards += 1
                 print("Bad board, total bad boards: ", bad_boards)
+
+
+
 
         these_binary = toBinary(these_boards)
-        if(q == 0):
+        if (q == 0):
             this_train.append(these_binary)
-        elif(q == 1):
+        elif (q == 1):
             this_test.append(these_binary)
         else:
             print("Error, not train nor test")
             exit(1)
-    #Sende inn til removeKFoldDuplicates
+    # Sende inn til removeKFoldDuplicates
 
-
-    #I messed up code somoewhere, so the whole list is put into this list. This line fixes this.
+    # I messed up code somoewhere, so the whole list is put into this list. This line fixes this.
     this_train = this_train[0]
     this_test = this_test[0]
-
-
 
     unique_train, unique_test = removeKFoldDuplicates(this_train, this_test)
     np.random.shuffle(unique_train)
@@ -907,7 +913,6 @@ for i in range(len(kfolds)):
         trainfile.write("\n")
     trainfile.close()
 
-
     stringnumber = str(i)
     filename = stringnumber + "teststatickfold.data"
     testfile = open(filename, 'w')
@@ -925,7 +930,5 @@ for i in range(len(kfolds)):
         testfile.write("\n")
     testfile.close()
 
-
-
-#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

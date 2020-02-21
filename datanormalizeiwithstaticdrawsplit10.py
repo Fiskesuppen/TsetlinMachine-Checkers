@@ -23,7 +23,9 @@ with open(filepath) as fp:
         #print("Line {}: {}".format(cnt, line.strip()))
         line = fp.readline()
 
-        if len(line) != 258:
+
+        #This number must be tweaked to fit the dataset. Length with commas.
+        if len(line) != 290:
             print("skip")
         elif line[-2] == "0":
             #losses.append(line)
