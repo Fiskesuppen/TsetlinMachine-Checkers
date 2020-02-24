@@ -853,9 +853,9 @@ for i in range(len(kfolds)):
                 bad_boards += 1
                 print("Bad board, total bad boards: ", bad_boards)
 
-            # Removed 1 move
+            # Removed 1 turn (2 moves)
             this_board = []
-            removed_one_move = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0]) - 1)]
+            removed_one_move = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0]) - 2)]
             created_board, errorcheck = createBoard(removed_one_move)
             if (errorcheck == 1):
                 this_board.append(created_board)
@@ -865,9 +865,9 @@ for i in range(len(kfolds)):
                 bad_boards += 1
                 print("Bad board, total bad boards: ", bad_boards)
 
-            # Removed 2 moves
+            # Removed 2 turns (4 moves)
             this_board = []
-            removed_two_moves = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0]) - 2)]
+            removed_two_moves = kfolds[i][q][e][0][0:(len(kfolds[i][q][e][0]) - 4)]
             created_board, errorcheck = createBoard(removed_two_moves)
             if (errorcheck == 1):
                 this_board.append(created_board)

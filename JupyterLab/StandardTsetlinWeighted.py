@@ -8,7 +8,8 @@ Y_train = np.array([])
 X_test = np.array([])
 Y_test = np.array([])
 
-base_path_start = "Data/KfoldDataStaticTransformed/"
+#base_path_start = "Data/KfoldDataStaticTransformed/"
+base_path_start = "Data/EndSecondThird/"
 base_path_end = "statickfold.data"
 # path_train = "Data/eventrain.data"
 # path_test = "Data/eventest.data"
@@ -29,16 +30,17 @@ def tsetlinStandardWeighted(epochs, clauses, T, s, k_fold_amount):
 
 
 def tsetlinStandardWeightedHandler(epochs, clauses, T, s, k_fold_amount):
-    score = tsetlinStandardWeighted(k_fold_amount, clauses, T, s, epochs)
+    score = tsetlinStandardWeighted(epochs, clauses, T, s, k_fold_amount)
     print(score)
-    average_score = round(sum(score)/len(score),2)
+    mean_score = round(sum(score)/len(score),2)
 
     #acstr = str(accuracy)
-    with open("StandardTsetlinWeightedLog.txt", "a+") as myfile:
-        myfile.write("Clauses: " + str(clauses) + ", Treshold: " + str(T) + ", S: " + str(s) + ", Epochs: " + str(epochs) + ", Mean accuracy: " + str(average_score) + ", Score per Kfold: " + str(score) + "\n")
+    #with open("StandardTsetlinWeightedLog.txt", "a+") as myfile:
+    with open("StandardTsetlinWeightedLogdEndSecondThird.txt", "a+") as myfile:
+        myfile.write("Clauses: " + str(clauses) + ", Treshold: " + str(T) + ", S: " + str(s) + ", Epochs: " + str(epochs) + ", Mean accuracy: " + str(mean_score) + ", Score per Kfold: " + str(score) + "\n")
     myfile.close()
 
-    print("Clauses: " + str(clauses) + ", Treshold: " + str(T) + ", S: " + str(s) + ", Epochs: " + str(epochs) + ", Mean accuracy: " + str(average_score) + ", Score per Kfold: " + str(score) + "\n")
+    print("Clauses: " + str(clauses) + ", Treshold: " + str(T) + ", S: " + str(s) + ", Epochs: " + str(epochs) + ", Mean accuracy: " + str(mean_score) + ", Score per Kfold: " + str(score) + "\n")
     print("Results saved to file")
 
 
@@ -81,7 +83,7 @@ def TM(_clauses, _T, _s, _epochs):
     tm = MultiClassTsetlinMachine(_clauses, _T, _s, boost_true_positive_feedback=0, weighted_clauses=True)
     print("Starting TM with weighted clauses..")
     print("\nAccuracy over ", _epochs, " epochs:\n")
-    past_epochs = [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
+    past_old_10_epochs = [10,10,10,10,10,10,10,10,10,10,10]
     past_10_epochs = [10,10,10,10,10,10,10,10,10,10]
     for i in range(_epochs):
         start = time()
@@ -89,18 +91,21 @@ def TM(_clauses, _T, _s, _epochs):
         stop = time()
         result = 100 * (tm.predict(X_test) == Y_test).mean()
         print("#%d Accuracy: %.2f%% (%.2fs)" % (i + 1, result, stop - start))
-        past_epochs.pop(0)
-        past_epochs.append(result)
-        long_period_average_score = round(sum(past_epochs)/len(past_epochs),2)
+        
+        past_old_10_epochs.pop(0)
+        past_old_10_epochs.append(past_10_epochs[0])
         past_10_epochs.pop(0)
-        past_10_epochs.append(result)
+        past_10_epochs.append(round_up(result,2))
+        
+        
+        long_period_average_score = round(sum(past_old_10_epochs)/len(past_old_10_epochs),2)
         this_period_average_score= round(sum(past_10_epochs)/len(past_10_epochs))
         if(long_period_average_score > this_period_average_score):
             print("long_period_average_score: ", long_period_average_score, " vs ", "this_period_average_score: ", this_period_average_score)
             break
 
     mean_accuracy = 100 * (tm.predict(X_test) == Y_test).mean()
-    print("Mean Accuracy:", mean_accuracy)
+    print("Most Recent Accuracy:", mean_accuracy)
     print("Finished running.. \n")
 
     return mean_accuracy
@@ -112,9 +117,5 @@ def TM(_clauses, _T, _s, _epochs):
 k_fold_amount = 10
 #tsetlinStandardWeightedHandler(k_fold_amount, clauses, T, s, epochs)
 
-tsetlinStandardWeightedHandler(k_fold_amount, 2000, 12000, 15, 500)
-tsetlinStandardWeightedHandler(k_fold_amount, 3000, 12000, 15, 500)
-tsetlinStandardWeightedHandler(k_fold_amount, 5000, 12000, 15, 500)
-tsetlinStandardWeightedHandler(k_fold_amount, 8000, 12000, 15, 500)
-tsetlinStandardWeightedHandler(k_fold_amount, 12000, 12000, 15, 500)
-tsetlinStandardWeightedHandler(k_fold_amount, 15000, 12000, 15, 500)
+tsetlinStandardWeightedHandler(500, 13000, 50000, 37, k_fold_amount)
+

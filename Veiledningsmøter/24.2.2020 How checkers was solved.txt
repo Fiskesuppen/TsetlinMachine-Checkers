@@ -1,0 +1,46 @@
+https://www.theatlantic.com/technology/archive/2017/07/marion-tinsley-checkers/534111/
+
+Endgame database contained all possible moves with 10 or less pieces left on the board. "The forward search had met the endgame database somewhere in the middle".
+
+
+https://en.wikipedia.org/wiki/Chinook_(draughts_player)
+Chinook's program algorithm includes an opening book, a library of opening moves from games played by grandmasters; a deep search algorithm; a good move evaluation function; and an end-game database for all positions with eight pieces or fewer. The linear handcrafted evaluation function considers several features of the game board, including piece count, kings count, trapped kings, turn, runaway checkers (unimpeded path to be kinged) and other minor factors. All of Chinook's knowledge was programmed by its creators, rather than learned with artificial intelligence.
+
+
+https://science.sciencemag.org/content/317/5844/1518/tab-pdf
+"state-of-the-art" artificial intelligence techniques were applied to the proving process.
+
+The technique used by Chinook was to calculate the result of every possible endgame board with 10 or less pieces left on the board and store this as a database. Chinook then tries to move the board towards a good endgame with the use of 
+
+Strongly vs weakly solved: For weakly
+solved games, both the result and a strategy for achieving it from the start of the game are known [e.g., in Go Moku the first player wins and a program can demonstrate the win (6)]. Strongly solved games have the result computed for all possible positions that can arise in the game [e.g., Awari (8)]. Chinook has weakly solved Checkers(8x8).
+
+Chinook method of calculating result when creating the dataset: "The solver uses two search programs to
+evaluate a position. The first program (targeted
+at 15 s, but sometimes much longer) uses
+Chinook to determine a heuristic value for the
+position (alpha-beta search to nominal search
+depths of 17 to 23 ply). Occasionally, this search
+determines that the position is a proven win or
+loss. Chinook was not designed to produce a
+proven draw, only a heuristic draw; demonstrating proven draws in a heuristic search seriously
+degrades performance.
+The alpha-beta search algorithm is the mainstay of game-playing programs. The algorithm
+does a depth-first, left-to-right traversal of the
+search tree (17) (SOM text). The algorithm
+propagates heuristic bounds on the value of a
+position: the minimum value that the side about
+to move can achieve and the maximum value that
+the side about to move can be limited to by the
+opponent. Lines of play that are provably outside
+this range are irrelevant and can be eliminated
+(cut off). A d-ply search with an average of b
+moves to consider in every position results in a
+tree with roughly bd positions. In the best case,
+the alpha-beta algorithm only needs to examine
+roughly bd/2 positions (16).
+If Chinook does not find a proven result, then
+a second program is invoked (100 s). It uses the
+Df-pn algorithm (18), a space-efficient variant of
+Proof Number search. The search returns a
+proven, partially proven, or unknown result".

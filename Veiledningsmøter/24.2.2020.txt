@@ -1,0 +1,15 @@
+Hypoteser:
+I hvilken grad kan Tsetlin machine predikere utfall av spill?
+I hvilken grad kan Tsetlin machine guide tresøk/evaluering?
+
+Eksperimenter:
+Utføres for å svare på hypotesene og danne resultater av dette.
+
+Diskusjon:
+Veie opp resultatene mot hypotesene.
+
+Spesifikt for meg:
+Undersøke hvordan de som løste checkers gjorde det. Tok de med noe ekstra informasjon? Noen ekstra parametere?
+
+Generelt:
+Det er mulig å hente ut clauses, kan regne ut prosentbasert sjanse for et gitt utfall basert på hvor mange clauses som stemmer på hvert utfall. tm.score(...)
