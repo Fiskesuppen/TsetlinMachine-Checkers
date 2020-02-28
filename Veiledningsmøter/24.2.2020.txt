@@ -1,6 +1,9 @@
-Hypoteser:
+Research questions: Should be focused, specific and researchable.
 I hvilken grad kan Tsetlin machine predikere utfall av spill?
 I hvilken grad kan Tsetlin machine guide tresøk/evaluering?
+
+Hypoteser: Statement. 
+
 
 Eksperimenter:
 Utføres for å svare på hypotesene og danne resultater av dette.
