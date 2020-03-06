@@ -3,71 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e27f3aa-7d6f-4e71-8150-ded64e9580fd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/0teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/3trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/6trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/7trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/8trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/9teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/9trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSetMakerMultipleBoards.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataSetMakerMultipleBoards.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataSetMakerMultipleBoardsNoCrossDupCheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataSetMakerMultipleBoardsNoCrossDupCheck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupyterLab/StandardTsetlin.py" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterLab/StandardTsetlin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py" beforeDir="false" afterPath="$PROJECT_DIR$/JupyterLab/StandardTsetlinWeighted.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/0teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/0trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/1teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/1trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/2teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/2trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/3teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/3trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/4teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/4trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/5teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/5trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/6teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/6trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/7teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/7trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/8teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/8trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/9teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3.2NoInternalDupeCheck/9trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/0teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/0trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/1teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/1trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/2teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/2trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/3teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/3trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/4teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/4trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/5teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/5trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/6teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/6trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/7teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/7trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/8teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/8trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/9teststatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/9trainstatickfold.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data3WThirdLastBoard/datainfo.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,13 +25,14 @@
     <session id="1933459347">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.104" value="1" />
           <entry key="project.open.time.106" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.120" value="1" />
           <entry key="project.open.time.147" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.92" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -165,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataSetMakerMultipleBoards.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="858" column="49" lean-forward="true" selection-start-line="858" selection-start-column="49" selection-end-line="858" selection-end-column="49" />
+            <state relative-caret-position="244">
+              <caret line="864" column="20" selection-start-line="864" selection-start-column="20" selection-end-line="864" selection-end-column="20" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -177,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataSetMakerMultipleBoardsNoCrossDupCheck.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="817" lean-forward="true" selection-start-line="817" selection-end-line="817" />
+            <state relative-caret-position="13855">
+              <caret line="817" selection-start-line="817" selection-end-line="817" />
             </state>
           </provider>
         </entry>
@@ -434,7 +370,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2927383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29727685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -485,9 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -526,27 +459,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test1.py">
+    <entry file="file://$PROJECT_DIR$/DataSetMakerMultipleBoards.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="244">
+          <caret line="864" column="20" selection-start-line="864" selection-start-column="20" selection-end-line="864" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataSetMakerMultipleBoardsNoCrossDupCheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="817" lean-forward="true" selection-start-line="817" selection-end-line="817" />
+        <state relative-caret-position="13855">
+          <caret line="817" selection-start-line="817" selection-end-line="817" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataSetMakerMultipleBoards.py">
+    <entry file="file://$PROJECT_DIR$/test1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="858" column="49" lean-forward="true" selection-start-line="858" selection-start-column="49" selection-end-line="858" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2074">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
         </state>
       </provider>
     </entry>
