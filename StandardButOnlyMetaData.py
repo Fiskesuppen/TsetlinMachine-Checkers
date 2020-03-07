@@ -690,7 +690,9 @@ for i in range(len(boards)):
         print("Error in length of board, not equal to 7")
     this_binary_board = []
     for q in range(len(boards[i][0])):
-        this_binary_board.append(intToBinary(boards[i][0][q]))
+        in_byte = intToBinary(boards[i][0][q])
+        for w in range(len(in_byte)):
+            this_binary_board.append(in_byte[w])
 
     this_binary_board.append(boards[i][1])
     binary_boards.append(this_binary_board)
