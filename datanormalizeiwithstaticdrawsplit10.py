@@ -27,6 +27,7 @@ with open(filepath) as fp:
         #This number must be tweaked to fit the dataset. Length with commas.
         if len(line) != 290:
             print("skip")
+            print(len(line))
         elif line[-2] == "0":
             #losses.append(line)
             thislist = []
