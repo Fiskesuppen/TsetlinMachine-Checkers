@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e27f3aa-7d6f-4e71-8150-ded64e9580fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/TsetlinMachine-Checkers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TsetlinMachine-Checkers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StandardButOnlyMetaData.py" beforeDir="false" afterPath="$PROJECT_DIR$/StandardButOnlyMetaData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/binaryboards.csv" beforeDir="false" afterPath="$PROJECT_DIR$/binaryboards.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datanormalizeiwithstaticdrawsplit10.py" beforeDir="false" afterPath="$PROJECT_DIR$/datanormalizeiwithstaticdrawsplit10.py" afterDir="false" />
-    </list>
+    <list default="true" id="8e27f3aa-7d6f-4e71-8150-ded64e9580fd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +63,15 @@
     <session id="1576238696">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -143,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StandardButOnlyMetaData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
+            <state relative-caret-position="11815">
               <caret line="696" column="42" selection-start-line="696" selection-start-column="42" selection-end-line="696" selection-end-column="42" />
             </state>
           </provider>
@@ -271,7 +264,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="G:/SecretProjects/TwitchBot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -432,7 +425,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30445153" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30683625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -516,6 +509,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/StandardButOnlyMetaData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11815">
+          <caret line="696" column="42" selection-start-line="696" selection-start-column="42" selection-end-line="696" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BoardMakerWMetaData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8925">
@@ -541,13 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2074">
           <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StandardButOnlyMetaData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="696" column="42" selection-start-line="696" selection-start-column="42" selection-end-line="696" selection-end-column="42" />
         </state>
       </provider>
     </entry>

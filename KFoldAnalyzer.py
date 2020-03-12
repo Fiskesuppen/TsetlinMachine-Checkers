@@ -12,7 +12,7 @@ test_draws = []
 
 traintest_ratios = []
 
-basepath = "data1WMetadata/"
+basepath = "dataEndToEightNoInternalDupeCheck/"
 basename = "statickfold.data"
 for i in range(10):
    train_lengths.append(0)
