@@ -1,0 +1,11 @@
+Monte carlo tree-search > Alpha beta pruning
+	-Granmo
+
+teste andre maskinlæringer på metadata settet
+	logistic regression
+	++
+	Hvis de får bra resultater, er det trolig konfigurasjonen av tsetlin machinen.
+	Hvis de får dårlige resultater, er det trolig datasetet som er problemet.
+
+Kombinere brett og denne metadataen?
+Akseptere duplikat i train, men ikke i test + ikke samme data i test og train? (slik som det blir gjort på endsecondthird ++)
