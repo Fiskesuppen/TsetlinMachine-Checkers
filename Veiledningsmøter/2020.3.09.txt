@@ -3,6 +3,7 @@ Monte carlo tree-search > Alpha beta pruning
 
 teste andre maskinlæringer på metadata settet
 	logistic regression
+		https://towardsdatascience.com/building-a-logistic-regression-in-python-step-by-step-becd4d56c9c8
 	++
 	Hvis de får bra resultater, er det trolig konfigurasjonen av tsetlin machinen.
 	Hvis de får dårlige resultater, er det trolig datasetet som er problemet.
