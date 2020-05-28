@@ -1,6 +1,6 @@
 # TsetlinMachine-Checkers
 Master's thesis project, University of Agder, Spring 2020, Checkers game classification by the use of Tsetlin Machine.
-Thesis title: The Application of the Tsetlin Machine inCheckers
+Thesis title: The Application of the Tsetlin Machine in Checkers
 
 The research proposed a Tsetlin Machine predictor and a Checkers player using the Tsetlin Machine as its board predictor.
 This is unfortunately not the most up-to-date collection of the scripts used, but the solution itself is complete.
