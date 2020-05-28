@@ -1,0 +1,4 @@
+DataSetMakerMultipleBoards.py (must adjust the amount of traceback to all moves, until eight turns worth of moves has been removed.)
+
+No color flip.
+Contains the final boards all through eight last turn boards. Boards generated from a set of moves in training is not used for testing for each KFold (clean testing). Any duplicates found in a train or test are removed from test (clean testing).

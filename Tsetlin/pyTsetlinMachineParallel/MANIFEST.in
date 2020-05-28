@@ -1,0 +1,4 @@
+include pyTsetlinMachineParallel/Tools.h
+include pyTsetlinMachineParallel/ConvolutionalTsetlinMachine.h
+include pyTsetlinMachineParallel/MultiClassConvolutionalTsetlinMachine.h
+include pyTsetlinMachineParallel/fast_rand.h

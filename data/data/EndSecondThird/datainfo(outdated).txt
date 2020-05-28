@@ -1,0 +1,44 @@
+No color flip.
+Contains final, second final and third final boards. Boards generated from a set of moves in training is not used for testing for each KFold (clean testing). Any duplicates found in a train or test are removed from test (clean testing).
+
+KFold  0  Train test ratios:  Size ratio:  10.873658932674534  Loss ratio:  11.07824056052939  Win ratio:  11.075524331025932  Draw ratio:  10.744082129019485
+KFold  0  Train: Amount of data:  57883  Loss percent:  22.191316966985124  Win percent:  16.721662664340133  Draw percent:  61.087020368674736
+KFold  0  Test: Amount of data:  6294  Loss percent:  22.608833809977757  Win percent:  17.032094057832854  Draw percent:  60.35907213218938
+
+KFold  1  Train test ratios:  Size ratio:  10.824857976620104  Loss ratio:  11.030727343446129  Win ratio:  11.075524331025932  Draw ratio:  10.68147771276746
+KFold  1  Train: Amount of data:  57913  Loss percent:  22.197088736553106  Win percent:  16.713000535285687  Draw percent:  61.089910728161215
+KFold  1  Test: Amount of data:  6269  Loss percent:  22.619237517945447  Win percent:  17.100015951507416  Draw percent:  60.280746530547134
+
+KFold  2  Train test ratios:  Size ratio:  10.835362589157729  Loss ratio:  11.041942261302623  Win ratio:  11.098480934173814  Draw ratio:  10.688339222614841
+KFold  2  Train: Amount of data:  57903  Loss percent:  22.194014127074592  Win percent:  16.712432861855174  Draw percent:  61.093553011070235
+KFold  2  Test: Amount of data:  6274  Loss percent:  22.617150143449155  Win percent:  17.11826585910105  Draw percent:  60.2645839974498
+
+KFold  3  Train test ratios:  Size ratio:  10.768779342723004  Loss ratio:  11.052303860523038  Win ratio:  11.004438938783938  Draw ratio:  10.601395440806757
+KFold  3  Train: Amount of data:  57936  Loss percent:  22.176194421430544  Win percent:  16.72017398508699  Draw percent:  61.10363159348247
+KFold  3  Test: Amount of data:  6239  Loss percent:  22.760057701554736  Win percent:  17.086071485815037  Draw percent:  60.15387081263023
+
+KFold  4  Train test ratios:  Size ratio:  10.850677951463856  Loss ratio:  11.112841678996963  Win ratio:  10.968940253843773  Draw ratio:  10.723072137544891
+KFold  4  Train: Amount of data:  57895  Loss percent:  22.179808273598756  Win percent:  16.73892391398221  Draw percent:  61.081267812419036
+KFold  4  Test: Amount of data:  6282  Loss percent:  22.71569563833174  Win percent:  16.921362623368356  Draw percent:  60.3629417382999
+
+KFold  5  Train test ratios:  Size ratio:  10.843623175891546  Loss ratio:  11.042801556420233  Win ratio:  11.167407713783478  Draw ratio:  10.68279448338232
+KFold  5  Train: Amount of data:  57905  Loss percent:  22.191520594076504  Win percent:  16.701493826094467  Draw percent:  61.10698557982903
+KFold  5  Test: Amount of data:  6279  Loss percent:  22.59913999044434  Win percent:  17.20019111323459  Draw percent:  60.200668896321076
+
+KFold  6  Train test ratios:  Size ratio:  10.885752293419484  Loss ratio:  11.052303860523038  Win ratio:  11.1099627945432  Draw ratio:  10.763879068978195
+KFold  6  Train: Amount of data:  57883  Loss percent:  22.19649983587582  Win percent:  16.71647979544944  Draw percent:  61.087020368674736
+KFold  6  Test: Amount of data:  6301  Loss percent:  22.536105380098398  Win percent:  17.06078400253928  Draw percent:  60.40311061736232
+
+KFold  7  Train test ratios:  Size ratio:  10.768779342723004  Loss ratio:  11.068731999688643  Win ratio:  10.982658959537572  Draw ratio:  10.601395440806757
+KFold  7  Train: Amount of data:  57936  Loss percent:  22.174468378900855  Win percent:  16.72190002761668  Draw percent:  61.10363159348247
+KFold  7  Test: Amount of data:  6239  Loss percent:  22.7921141208527  Win percent:  17.05401506651707  Draw percent:  60.15387081263023
+
+KFold  8  Train test ratios:  Size ratio:  10.783518323522811  Loss ratio:  11.017740429505135  Win ratio:  10.91396740251702  Draw ratio:  10.66271018793274
+KFold  8  Train: Amount of data:  57931  Loss percent:  22.185013205365003  Win percent:  16.73370043672645  Draw percent:  61.081286357908546
+KFold  8  Test: Amount of data:  6247  Loss percent:  22.666880102449174  Win percent:  16.9361293420842  Draw percent:  60.39699055546662
+
+KFold  9  Train test ratios:  Size ratio:  10.801712529779374  Loss ratio:  11.07824056052939  Win ratio:  11.113406321008055  Draw ratio:  10.616119099409588
+KFold  9  Train: Amount of data:  57926  Loss percent:  22.174843766184445  Win percent:  16.714428753927425  Draw percent:  61.11072747988814
+KFold  9  Test: Amount of data:  6257  Loss percent:  22.742528368227585  Win percent:  17.196739651590217  Draw percent:  60.06073198018219
+
+Max train/test split variance:  0.11697295069648028  Largest test ratio:  10.885752293419484  Smallest test ratio:  10.768779342723004

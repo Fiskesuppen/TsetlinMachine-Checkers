@@ -1,0 +1,1 @@
+Clauses: 15000, Treshold: 12000, S: 15, Epochs: 500, Mean accuracy: 49.83, Score per Kfold: [50.14, 43.7, 54.15, 47.38, 45.17, 48.74, 56.67, 53.53, 50.49, 48.32]

@@ -1,2 +1,0 @@
-Revurdere dataset: EndSecondThird, og alle andre som bruker tidligere trekk.
-Når en bygger dataset hvor kun ett trekk er trukket fra, vil turordenen bli ødelagt. I utgangspunktet vil neste trekk være sort sitt, men dette gjelder ikke om kun ett trekk er trukket fra for å bygge et brett. Dette må gjøres i par. Den samme problematikken dukker opp når data binærflippes. Binærflipp kan benyttes om en skal spille utfra hvit sin posisjon, men da må originaldata ikke beholdes.

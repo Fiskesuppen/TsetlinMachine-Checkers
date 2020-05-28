@@ -1,0 +1,6 @@
+Source: https://github.com/cair/pyTsetlinMachineParallel
+
+Modified slightly in order to remove memory leak.
+
+Linux install: Move terminal to this folder, execute the command: "pip install ."
+Windows and others: Not possible.

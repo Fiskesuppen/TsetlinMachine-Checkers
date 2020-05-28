@@ -1,0 +1,13 @@
+StandardButOnlyMetaData.py -> datanormalizewithstaticdrawsplit10.py
+Data built straight-forward. Cleaned, no alterations, final board only. Metadata based upon: https://github.com/SamRagusa/Checkers-Reinforcement-Learning
+
+1. Number of own uncrowned pieces
+2. Number of opponent uncrowned pieces
+3. Number of own kings
+4. Number of opponent kings
+5. Number of own pieces (crowned and uncrowned) on left and right edges of board
+6. Integer value of own vertical center of mass
+7. Integer value of opponent vertical center of mass
+
+
+

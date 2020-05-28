@@ -1,0 +1,1 @@
+Clauses: 10000, Treshold: 30000, S: 30, Epochs: 500, Shape x: 4, Shape y: 8, Shape z: 4, Frame x: 2, Frame y: 2, Mean accuracy: 64.53, Score per Kfold: [63.87, 65.27, 64.3, 65.3, 64.49, 63.77, 64.49, 64.32, 64.25, 65.27]

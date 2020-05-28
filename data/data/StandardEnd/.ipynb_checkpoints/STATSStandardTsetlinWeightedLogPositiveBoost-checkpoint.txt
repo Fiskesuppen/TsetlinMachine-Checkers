@@ -1,0 +1,12 @@
+
+Dataset: StandardEnd Dupe Check, Clauses: 15000, Treshold: 40000, S: 15, Epochs: 500, Mean accuracy: 69.9, Score per Kfold: [70.49, 68.65, 68.42, 71.11, 70.51, 69.71, 69.76, 69.71, 70.64, 69.95]
+Win precision avg and list: 0.96 [0.96, 0.95, 0.95, 0.97, 0.95, 0.99, 0.98, 0.97, 0.97, 0.93]
+Win recalls avg and list: 0.81 [0.78, 0.82, 0.67, 0.89, 0.79, 0.88, 0.92, 0.85, 0.77, 0.76]
+Win FScores avg and list: 0.88 [0.86, 0.88, 0.79, 0.93, 0.86, 0.93, 0.95, 0.91, 0.86, 0.83]
+Loss precision avg and list: 0.95 [0.94, 0.94, 0.92, 0.97, 0.94, 0.95, 0.96, 0.95, 0.95, 0.94]
+Loss recalls avg and list: 0.87 [0.87, 0.87, 0.81, 0.91, 0.87, 0.86, 0.95, 0.89, 0.85, 0.81]
+Loss FScores avg and list: 0.91 [0.9, 0.9, 0.86, 0.94, 0.9, 0.91, 0.96, 0.92, 0.9, 0.87]
+Draw precision avg and list: 0.92 [0.91, 0.92, 0.87, 0.94, 0.91, 0.93, 0.97, 0.93, 0.9, 0.89]
+Draw recalls avg and list: 0.98 [0.98, 0.97, 0.98, 0.99, 0.97, 0.99, 0.99, 0.98, 0.99, 0.97]
+Draw FScores avg and list: 0.95 [0.94, 0.95, 0.92, 0.97, 0.94, 0.96, 0.98, 0.96, 0.94, 0.93]
+

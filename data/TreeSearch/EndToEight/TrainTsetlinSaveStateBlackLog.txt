@@ -1,0 +1,1 @@
+Clauses: 60000, Treshold: 80000, S: 15, Epochs: 500, Accuracy: 67.85415950076164

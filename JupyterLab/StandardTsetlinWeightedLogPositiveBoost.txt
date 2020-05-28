@@ -1,7 +1,0 @@
-Clauses: 15000, Treshold: 12000, S: 15, Epochs: 500, Mean accuracy: 69.5, Score per Kfold: [69.66, 68.56, 68.33, 70.51, 69.18, 69.44, 70.22, 69.35, 70.36, 69.44]
-Clauses: 15000, Treshold: 12000, S: 1, Epochs: 500, Mean accuracy: 60.01, Score per Kfold: [61.52, 51.43, 65.34, 53.83, 54.94, 59.94, 65.75, 64.92, 62.34, 60.12]
-Clauses: 15000, Treshold: 12000, S: 15, Epochs: 500, Mean accuracy: 69.67, Score per Kfold: [71.09, 69.3, 69.25, 70.33, 68.21, 68.7, 69.81, 70.45, 69.85, 69.67]
-Clauses: 15000, Treshold: 12000, S: 30, Epochs: 500, Mean accuracy: 69.0, Score per Kfold: [69.25, 68.33, 68.14, 70.6, 69.96, 68.75, 69.58, 67.27, 70.45, 67.69]
-Clauses: 15000, Treshold: 12000, S: 40, Epochs: 500, Mean accuracy: 68.77, Score per Kfold: [68.56, 68.14, 68.1, 69.54, 69.45, 69.25, 68.98, 68.24, 68.19, 69.25]
-Clauses: 15000, Treshold: 12000, S: 60, Epochs: 500, Mean accuracy: 69.05, Score per Kfold: [68.65, 68.84, 67.82, 70.97, 69.31, 68.47, 69.62, 68.79, 69.07, 68.98]
-Clauses: 15000, Treshold: 12000, S: 80, Epochs: 500, Mean accuracy: 68.43, Score per Kfold: [68.56, 68.24, 67.82, 69.54, 69.13, 68.75, 67.41, 67.27, 68.61, 68.93]
